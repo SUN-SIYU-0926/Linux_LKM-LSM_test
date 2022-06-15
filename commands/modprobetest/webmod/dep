@@ -1,0 +1,7 @@
+node4.ko: node2.ko node3.ko node1.ko
+node2.ko: node1.ko
+node3.ko: node1.ko
+node1.ko:
+node5.ko: node4.ko node2.ko node3.ko node1.ko
+
+

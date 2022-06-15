@@ -1,0 +1,7 @@
+kernel/node4.ko: kernel/node2.ko kernel/node3.ko kernel/node1.ko
+kernel/node2.ko: kernel/node1.ko
+kernel/node3.ko: kernel/node1.ko
+kernel/node1.ko:
+kernel/node5.ko: kernel/node4.ko kernel/node2.ko kernel/node3.ko kernel/node1.ko
+kernel/usecal.ko: kernel/node1.ko
+

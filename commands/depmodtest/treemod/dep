@@ -1,0 +1,7 @@
+kernel/tree1.ko:
+kernel/tree2_2.ko: kernel/tree1.ko
+kernel/tree2_1.ko: kernel/tree1.ko
+kernel/tree3_4.ko: kernel/tree2_2.ko kernel/tree1.ko
+kernel/tree3_1.ko: kernel/tree2_1.ko kernel/tree1.ko
+kernel/tree3_2.ko: kernel/tree2_1.ko kernel/tree1.ko
+
